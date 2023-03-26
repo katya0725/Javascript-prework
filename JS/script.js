@@ -1,3 +1,14 @@
-let computerMove = 'stone';
-let playerMove = 'paper';
-printMessage('I chose '+computerMove+'. If you choose '+playerMove+', you win');
+let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+/*console.log('Wylosowana liczba to: ' + randomNumber);*/
+
+let computerMove = 'Empty';
+
+if(randomNumber == 1){
+  computerMove = 'stone';
+} else if (randomNumber == 2){
+  computerMove = 'scissors';
+} else computerMove = 'paper';
+    
+
+printMessage('Computer choose: ' + computerMove);
