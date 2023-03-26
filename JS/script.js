@@ -1,3 +1,3 @@
-let computerMove = 'камень';
-let playerMove = 'бумага';
-printMessage('Я выбираю '+computerMove+'. Если ты выберешь '+playerMove+', то выиграешь');
+let computerMove = 'stone';
+let playerMove = 'paper';
+printMessage('I chose '+computerMove+'. If you choose '+playerMove+', you win');
