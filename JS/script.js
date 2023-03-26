@@ -18,6 +18,25 @@ if(playerInput == 1){
     playerMove = 'stone';
   } else if (playerInput == 2){
     playerMove = 'scissors';
-  } else playerMove = 'paper';
+  } else if (playerInput == 3) {
+    playerMove = 'paper';
+  } else printMessage('Choose error number');
 
-printMessage('Twój ruch to: ' + playerMove);
+if ((playerMove == 'stone' && computerMove == 'stone') ||
+    (playerMove == 'scissors' && computerMove == 'scissors') ||
+    (playerMove == 'paper' && computerMove == 'paper'))
+{
+    printMessage('draw');
+}
+if ((playerMove == 'stone' && computerMove == 'paper') ||
+    (playerMove == 'scissors' && computerMove == 'stone') ||
+    (playerMove == 'paper' && computerMove == 'scissors'))
+{
+    printMessage('you lose');
+}
+if ((playerMove == 'stone' && computerMove == 'scissors') ||
+    (playerMove == 'scissors' && computerMove == 'paper') ||
+    (playerMove == 'paper' && computerMove == 'stone'))
+{
+    printMessage('you win');
+}
