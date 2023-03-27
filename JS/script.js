@@ -1,11 +1,10 @@
 function playGame(argPlayerInput){
 clearMessages();
-let randomNumber = Math.floor(Math.random() * 3 + 1);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 
-let computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 
-//let playerInput = prompt('Choose your move! 1: stone, 2: scissors, 3: paper.');
-let playerMove = getMoveName(argPlayerInput);
+const playerMove = getMoveName(argPlayerInput);
 
 displayResult(computerMove,playerMove);
 };
